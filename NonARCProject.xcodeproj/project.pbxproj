@@ -16,6 +16,7 @@
 		3FEF453E1587007300F0A94E /* JHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF453D1587007300F0A94E /* JHViewController.m */; };
 		3FEF45411587007300F0A94E /* JHViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FEF453F1587007300F0A94E /* JHViewController_iPhone.xib */; };
 		3FEF45441587007300F0A94E /* JHViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FEF45421587007300F0A94E /* JHViewController_iPad.xib */; };
+		3FEF45551587011300F0A94E /* JHDataObject_ARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF45541587011300F0A94E /* JHDataObject_ARC.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,18 @@
 		3FEF452A1587007200F0A94E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3FEF452C1587007200F0A94E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FEF452E1587007200F0A94E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3FEF45321587007200F0A94E /* NonARCProject-Info.plist */ = {isa = PBXFileReference; path = "NonARCProject-Info.plist"; sourceTree = "<group>"; };
+		3FEF45321587007200F0A94E /* NonARCProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NonARCProject-Info.plist"; sourceTree = "<group>"; };
 		3FEF45341587007200F0A94E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FEF45361587007300F0A94E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3FEF45381587007300F0A94E /* NonARCProject-Prefix.pch */ = {isa = PBXFileReference; path = "NonARCProject-Prefix.pch"; sourceTree = "<group>"; };
-		3FEF45391587007300F0A94E /* JHAppDelegate.h */ = {isa = PBXFileReference; path = JHAppDelegate.h; sourceTree = "<group>"; };
+		3FEF45381587007300F0A94E /* NonARCProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NonARCProject-Prefix.pch"; sourceTree = "<group>"; };
+		3FEF45391587007300F0A94E /* JHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHAppDelegate.h; sourceTree = "<group>"; };
 		3FEF453A1587007300F0A94E /* JHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHAppDelegate.m; sourceTree = "<group>"; };
-		3FEF453C1587007300F0A94E /* JHViewController.h */ = {isa = PBXFileReference; path = JHViewController.h; sourceTree = "<group>"; };
+		3FEF453C1587007300F0A94E /* JHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHViewController.h; sourceTree = "<group>"; };
 		3FEF453D1587007300F0A94E /* JHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHViewController.m; sourceTree = "<group>"; };
 		3FEF45401587007300F0A94E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JHViewController_iPhone.xib; sourceTree = "<group>"; };
 		3FEF45431587007300F0A94E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JHViewController_iPad.xib; sourceTree = "<group>"; };
+		3FEF45531587011300F0A94E /* JHDataObject_ARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDataObject_ARC.h; sourceTree = "<group>"; };
+		3FEF45541587011300F0A94E /* JHDataObject_ARC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDataObject_ARC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 		3FEF45301587007200F0A94E /* NonARCProject */ = {
 			isa = PBXGroup;
 			children = (
+				3FEF45531587011300F0A94E /* JHDataObject_ARC.h */,
+				3FEF45541587011300F0A94E /* JHDataObject_ARC.m */,
 				3FEF45391587007300F0A94E /* JHAppDelegate.h */,
 				3FEF453A1587007300F0A94E /* JHAppDelegate.m */,
 				3FEF453C1587007300F0A94E /* JHViewController.h */,
@@ -169,6 +174,7 @@
 				3FEF45371587007300F0A94E /* main.m in Sources */,
 				3FEF453B1587007300F0A94E /* JHAppDelegate.m in Sources */,
 				3FEF453E1587007300F0A94E /* JHViewController.m in Sources */,
+				3FEF45551587011300F0A94E /* JHDataObject_ARC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +259,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NonARCProject/NonARCProject-Prefix.pch";
 				INFOPLIST_FILE = "NonARCProject/NonARCProject-Info.plist";
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -264,6 +271,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NonARCProject/NonARCProject-Prefix.pch";
 				INFOPLIST_FILE = "NonARCProject/NonARCProject-Info.plist";
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

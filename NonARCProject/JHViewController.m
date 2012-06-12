@@ -7,23 +7,36 @@
 //
 
 #import "JHViewController.h"
+#import "JHDataObject_ARC.h"
 
 @interface JHViewController ()
+
+@property (nonatomic, retain) JHDataObject_ARC * anObject;
 
 @end
 
 @implementation JHViewController
 
+@synthesize anObject = anObject_;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.anObject = [[[JHDataObject_ARC alloc] init] autorelease];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+}
+
+- (void) dealloc
+{
+    self.anObject = nil;
+    
+    [super dealloc];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
